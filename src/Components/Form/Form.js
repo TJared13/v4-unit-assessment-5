@@ -25,7 +25,7 @@ class Form extends Component {
 
     return (
       <div className='form content-box'>
-        <h2 className='title'>New Post</h2>
+        <h2 className='post-title'>New Post</h2>
         <div className='form-main'>
           <div className='form-input-box'>
             <p>Title:</p>

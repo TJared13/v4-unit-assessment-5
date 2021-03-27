@@ -27,11 +27,11 @@ class Nav extends Component {
   
   logout() {
     axios.post('/api/auth/logout')
-      .then(_ => this.logout)
+      .then(_ => this.props.logout())
   }
   
   render() {
-    console.log(this.props)
+    // console.log(this.props)
       return this.props.location.pathname !== '/' &&
         <div className='nav'>
           <div className='nav-profile-container'>
