@@ -50,6 +50,7 @@ module.exports = {
         res.sendStatus(403)
     },
     readPost: (req, res) => {
+      console.log(req.params.id)
       req.app.get('db').post.read_post(req.params.id)
         .then(post => post[0] ? res.status(200).send(post[0]) : res.status(200).send({}))
     },
